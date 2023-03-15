@@ -1,0 +1,56 @@
+.page {
+  max-width: 1280px;
+  min-width: 310px;
+  margin: 0 auto;
+}
+.header {
+  font-size: 60px;
+  text-align: center;
+}
+.header__title {
+}
+.content {
+}
+.game {
+  margin: 20px auto 0;
+}
+.world {
+  display: block;
+  margin: auto;
+}
+.score {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 60px;
+  display: block;
+}
+.score__title {
+}
+.score__count {
+  color: red;
+}
+
+.control {
+  max-width: 800px;
+  margin: 20px auto 0;
+  display: flex;
+  justify-content: space-between;
+}
+.control__button {
+  display: block;
+  width: 150px;
+  height: 50px;
+  background-color: greenyellow;
+}
+.control__button_route_start {
+}
+.control__button_route_pause {
+}
+.control__button_route_reset {
+}
+.control__button_disabled {
+  background-color: white;
+}
+.control__button_active {
+  background-color: red;
+}
