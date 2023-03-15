@@ -13,7 +13,7 @@
 
 
 
-* [Работа на GitHub Pages](https://apostaldante.github.io/mesto/)  
+* [Работа на GitHub Pages](https://apostaldante.github.io/snake/)  
 
 
   
