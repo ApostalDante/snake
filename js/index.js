@@ -17,12 +17,14 @@ function startGame() {
 function pauseGame() {
   if (pauseBull) {
     pushStop();
+    document.removeEventListener('keydown', onKeyDown);
     pauseBull = false;
     buttonPause.classList.add('control__button_active');
   } else if (gameOver) {
     buttonPause.classList.remove('control__button_active');
     setDisabledButton(buttonPause);
   } else if (!gameOver) {
+    document.addEventListener('keydown', onKeyDown);
     pauseBull = true;
     pushStart();
     buttonPause.classList.remove('control__button_active');
@@ -33,6 +35,7 @@ function resetGame() {
   pushReset();
   pauseBull = true;
   buttonPause.classList.remove('control__button_active');
+  document.removeEventListener('keydown', onKeyDown);
   setEnabledButton(buttonStart);
   setDisabledButton(buttonPause);
   setDisabledButton(buttonReset);
