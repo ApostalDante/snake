@@ -3,6 +3,9 @@
   min-width: 310px;
   margin: 0 auto;
 }
+.page__scroll_off {
+  overflow: hidden;
+}
 .header {
   font-size: 60px;
   text-align: center;
